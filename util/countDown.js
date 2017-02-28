@@ -1,7 +1,7 @@
 /*
 *	倒计时
 * author: @secilla
-*	update 2016-5-18
+* update 2016-5-18
 * @param {Number}: 倒计的时间，单位为毫秒
 * @returns {CountDown}: 返回倒计时实例
 * CountDown.step(@Number) 设置process函数运行的间隔，默认是1000
@@ -121,7 +121,7 @@
 	if (typeof define === 'function' && define.amd){
 		define(function(){return CountDown});
 	} else if (typeof module != 'undefined' && module.exports) {
-		module.exports = CountDown
+		module.exports = CountDown;
 	} else {
 		global.CountDown = CountDown;
 	}
